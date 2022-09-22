@@ -3,7 +3,7 @@ let buttons = document.querySelector('.buttons'),
   btn = document.querySelectorAll('span'),
   value = document.getElementById('value'),
   toggleBtn = document.querySelector('.toggleBtn'),
-  body = document.querySelector('.body');
+  body = document.querySelector('body');
 
 for (let i = 0; i < btn.length; i++) {
   btn[i].addEventListener('click', function () {
