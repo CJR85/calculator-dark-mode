@@ -1,7 +1,9 @@
 'use strict';
 let buttons = document.querySelector('.buttons'),
   btn = document.querySelectorAll('span'),
-  value = document.getElementById('value');
+  value = document.getElementById('value'),
+  toggleBtn = document.querySelector('.toggleBtn'),
+  body = document.querySelector('.body');
 
 for (let i = 0; i < btn.length; i++) {
   btn[i].addEventListener('click', function () {
@@ -16,3 +18,7 @@ for (let i = 0; i < btn.length; i++) {
     }
   });
 }
+
+toggleBtn.onclick = function () {
+  body.classList.toggle('dark');
+};
